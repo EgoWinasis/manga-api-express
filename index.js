@@ -8,11 +8,9 @@ const helmet = require("helmet");
 
 
 app.use(helmet());
-// Set up CORS for the specific origin
-const allowedOrigin = "https://mangaindo-vue.vercel.app";
-
+// Set up CORS for all origins
 const corsOptions = {
-  origin: allowedOrigin,
+  origin: "*", // Set it to "*" to allow all origins, or set it to true
   methods: "GET, POST, PUT, DELETE",
   allowedHeaders: "Content-Type",
 };
