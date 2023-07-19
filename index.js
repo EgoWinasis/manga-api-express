@@ -9,7 +9,7 @@ const helmet = require("helmet");
 
 app.use(helmet());
 // Set up CORS for the specific origin
-const allowedOrigin = "https://mangaindo-vue.vercel.app/";
+const allowedOrigin = "https://mangaindo-vue.vercel.app";
 
 const corsOptions = {
   origin: allowedOrigin,
