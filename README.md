@@ -1,10 +1,9 @@
-# Manga API
-Restful API Manga bahasa Indonesia built with ❤️ and node.js
+
 
 # Usage
 1. Clone this repository
     ```bash
-    git clone https://github.com/febryardiansyah/manga-api.git
+  
     ```
 2. Install dependecies (`yarn` or `npm install`)
 3. Start the development environment (*if you haven't installed nodemon globally, you can do `npm i nodemon --save`)
@@ -14,8 +13,7 @@ Restful API Manga bahasa Indonesia built with ❤️ and node.js
 4. visit http://localhost:3000/api
 
 # Documentation
-__API__ __PATH__ = https://mangamint.kaedenoki.net/api/
-</br>__ApI__ Version = `v2.0`
+
 
 ## All Manga
 Get Latest Manga Update
@@ -79,7 +77,3 @@ example : https://mangamint.kaedenoki.net/api/manhua/1
 ```
 example :https://mangamint.kaedenoki.net/api/chapter/after-transformation-mine-and-her-wild-fantasy-chapter-70-bahasa-indonesia/
 
-## Showcase
-App Showcase that use this API (you can add your app by edit this readme)
-
-- [MangaMint](https://github.com/febryardiansyah/manga_mint) Flutter Manga Reader Application by [Febry ardiansyah](https://github.com/febryardiansyah)

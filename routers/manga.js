@@ -223,6 +223,10 @@ router.get("/genres/:slug/:pagenumber", async (req, res) => {
     pagenumber === "1"
       ? `https://data.komiku.id/pustaka/?orderby=modified&genre=${slug}&genre2=&status=&category_name=`
       : `https://data.komiku.id/pustaka/page/${pagenumber}/?orderby=modified&genre=${slug}&genre2&status&category_name`;
+  // const url =
+  //   pagenumber === "1"
+  //     ? `https://komiku.id/${slug}/`
+  //     : `https://komiku.id/${slug}/page/${pagenumber}/`;
   try {
     const response = await AxiosService(url);
     const $ = cheerio.load(response.data);
