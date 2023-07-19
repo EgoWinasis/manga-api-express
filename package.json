@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
-    "start": "MODE=PRODUCTION node index.js",
+    "start": "node index.js",
     "dev": "MODE=DEVELOPMENT nodemon index.js"
   },
   "keywords": [],
