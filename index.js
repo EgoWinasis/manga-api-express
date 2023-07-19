@@ -6,8 +6,19 @@ const chapter = require("./routers/chapter");
 const cors = require("cors");
 const helmet = require("helmet");
 
-app.use(cors());
+
 app.use(helmet());
+// Set up CORS for the specific origin
+const allowedOrigin = "https://mangaindo-vue.vercel.app/";
+
+const corsOptions = {
+  origin: allowedOrigin,
+  methods: "GET, POST, PUT, DELETE",
+  allowedHeaders: "Content-Type",
+};
+
+app.use(cors(corsOptions));
+
 app.use("/api", manga);
 app.use(express.static("./public"));
 app.use("/api/chapter", chapter);
